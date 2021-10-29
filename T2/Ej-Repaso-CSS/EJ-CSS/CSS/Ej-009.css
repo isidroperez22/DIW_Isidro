@@ -1,0 +1,25 @@
+*{
+    font-family: 'Lato', sans-serif;
+}
+a::before{
+    content: "↪";
+}
+h2::first-letter{
+    font-size: 70px;
+}
+h2 + p::first-letter{
+    text-indent: 2em;
+}
+abbr::after{
+    content: "(" attr(title) ")";
+}
+
+li:first-child{
+    background-color: yellow;
+}
+li:last-child{
+    background-color: grey;
+}
+li:nth-child(odd){
+    border: palevioletred 1px dotted;
+}

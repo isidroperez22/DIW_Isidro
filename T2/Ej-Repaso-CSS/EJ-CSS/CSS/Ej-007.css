@@ -1,0 +1,26 @@
+*{
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+nav ul li::before{
+    content: "🗂 ";
+}
+
+nav ul li ul li::before{
+    content: "📁 ";
+}
+nav ul li ul li ul li::before{
+    content: "📕 ";
+}
+
+nav ul li ul li ul li ul li::before{
+    content: "📚 ";
+}
+nav{
+    margin-right : 85%;
+}
+
+a:hover{
+    background-color: grey;
+}

@@ -1,0 +1,35 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    text-align: center;
+}
+ul {
+    list-style:none;
+    display: flex;
+    justify-content: center;
+
+}
+li {
+    float:left;
+    margin-left: 10px;
+    background-color: chocolate;
+    padding: 10px;
+    border-color:rgb(100, 43, 3);
+    border-style: solid;
+    border-bottom: none;
+    font-size: 24px;
+    font-weight: bol;
+
+}
+hr{
+    margin-top: -17px;
+    color: rgb(100, 43, 3);
+}
+nav hr:hover{
+    margin-top: -16px;
+    color: cornsilk;
+}
+li:hover{
+    background-color: cornsilk;
+}

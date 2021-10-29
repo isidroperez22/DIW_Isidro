@@ -1,0 +1,32 @@
+header{
+    background-color: rgb(241, 241, 138);
+    padding: 25px 50px 75px 100px;
+    text-align: center;
+}
+#leftcolumn #navigation{
+    text-align: center;
+    background-color: rgb(164, 189, 149);
+    padding: 150px 50px 75px 100px;
+    margin-right: 70%;
+}
+#leftcolumn #linklist{
+    background-color:rgb(171, 133, 197);
+    padding: 150px 50px 75px 100px;
+    margin-right: 70%;
+    text-align: center;
+}
+article section{
+    background-color: rgb(141, 216, 209);
+    padding: 455px 50px 75px 100px;
+    margin-left: 30%;
+    text-align: center;
+    position: relative;
+    bottom: 588px;
+}
+footer{
+    background-color: rgb(214, 153, 173);
+    padding: 50px 1px 2px 1px;
+    position: relative;
+    text-align: center;
+    bottom: 590px;
+}

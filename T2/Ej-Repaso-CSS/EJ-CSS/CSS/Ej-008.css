@@ -1,0 +1,31 @@
+ul{
+    background-color: yellow ;
+    border-radius: 1em;
+    box-shadow: 0px 20px 30px 20px blue;
+    list-style: none;
+}
+ul li:hover::first-letter{
+    cursor: crosshair;
+    font-weight: bold;
+
+}
+ul li:hover{
+    text-transform: uppercase;
+}
+
+#Messi{
+    text-decoration: overline black;
+    color: red;
+}
+#Messi::first-letter{
+    font-size: 30px;
+    color: blue;
+}
+#bappe{
+    text-decoration: underline black;
+    color: red;
+}
+#bappe::first-letter{
+    font-size: 30px;
+    color: green;
+}

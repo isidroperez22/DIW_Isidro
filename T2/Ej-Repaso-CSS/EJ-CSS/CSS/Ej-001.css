@@ -1,0 +1,37 @@
+h1{
+    text-align: center;
+       text-decoration: underline;
+    }
+
+    header nav ul li{ 
+        text-align: center;
+        display: inline-block;
+        margin: 20px;
+    }
+    header nav {
+        text-align: center;
+    }
+    a:hover{
+        background-color: red;
+    }
+    div{
+        background-color: grey;
+        color: black;
+        font-weight: bold;
+        background-image: linear-gradient(white, grey, white);
+        font-size: 20px;
+}
+    article{
+        border:2px solid black;
+        margin-left: 35%;
+        margin-right: 35%;
+    }
+    article section {
+        margin: 2%;
+    }
+        
+    article section ul{
+        list-style-image: url("../img/estrella.png");
+
+    }
+
