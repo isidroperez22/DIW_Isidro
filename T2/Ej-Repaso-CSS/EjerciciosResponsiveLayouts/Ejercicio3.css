@@ -1,0 +1,243 @@
+body{
+    background-color: #ffffbf;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1{
+    text-align: center;
+    font-size: 100px;
+}
+
+.formulario{
+        text-align: center;
+        border: 2px solid black;
+        margin-right: 40%;
+        margin-left: 40%;
+        margin-bottom: 50px;
+}
+.formulario form input {
+    margin-bottom: 10px;
+}
+.formulario form .button {
+    background-color: #d35400 ;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.formulario form .button:hover {
+    background-color: #873600;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+form label{
+    font-size: 20px;
+}
+
+.fila1{
+    margin-left: 30%;
+    display: flex;
+    float: left;
+}
+.fila2{
+    margin-left: 30%;
+    display: flex;
+    float: left;
+}
+.fila1 div {
+    width: 75px;
+    height: 75px;
+    align-items: center;
+}
+.fila1 div:nth-child(odd) {
+    background-color: #fff6d5;
+}
+.fila1 div:nth-child(even) {
+    background-color: #873600;
+}
+
+
+.fila2 div {
+    width: 75px;
+    height: 75px;
+}
+
+.fila2 div:nth-child(odd) {
+    background-color: #873600;
+}
+
+
+.fila2 div:nth-child(even) {
+    background-color: #fff6d5;
+}
+
+.fila1 div .negras{
+    width: 70px;
+    height: 70px;
+    background-color:  #6e2c00 ;
+    border-radius: 50%;
+    border: 2px solid black;
+
+}
+.fila2 div .negras{
+    width: 70px;
+    height: 70px;
+    background-color:  #6e2c00 ;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.fila1 div .blancas{
+    width: 70px;
+    height: 70px;
+    background-color: #fff6d5;
+    border-radius: 50%;
+    border: 2px solid black;
+
+}
+.fila2 div .blancas{
+    width: 70px;
+    height: 70px;
+    background-color: #fff6d5;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+footer{
+    margin-top: 45%;
+}
+
+@media(max-width:499px){
+    body{
+        background-color: #ffffbf;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    h1{
+        text-align: center;
+        font-size: 50px;
+    }
+    form label{
+        font-size: 15px;
+    }
+    .formulario{
+            text-align: center;
+            border: 2px solid black;
+            margin-right: 20%;
+            margin-left: 20%;
+            margin-bottom: 40px;
+    }
+    .formulario form input {
+        margin-bottom: 10px;
+    }
+    .formulario form .button {
+        background-color: #d35400 ;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 10px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+    
+    .formulario form .button:hover {
+        background-color: #873600;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 10px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+    
+
+    
+    .fila1{
+        margin-left: 10%;
+        display: flex;
+        float: left;
+    }
+    .fila2{
+        margin-left: 10%;
+        display: flex;
+        float: left;
+    }
+    .fila1 div {
+        width: 30px;
+        height: 30px;
+        align-items: center;
+    }
+    .fila1 div:nth-child(odd) {
+        background-color: #fff6d5;
+    }
+    .fila1 div:nth-child(even) {
+        background-color: #873600;
+    }
+    
+    
+    .fila2 div {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .fila2 div:nth-child(odd) {
+        background-color: #873600;
+    }
+    
+    
+    .fila2 div:nth-child(even) {
+        background-color: #fff6d5;
+    }
+    
+    .fila1 div .negras{
+        width: 25px;
+        height: 25px;
+        background-color:  #6e2c00 ;
+        border-radius: 50%;
+        border: 2px solid black;
+    
+    }
+    .fila2 div .negras{
+        width: 25px;
+        height: 25px;
+        background-color:  #6e2c00 ;
+        border-radius: 50%;
+        border: 2px solid black;
+    }
+    
+    .fila1 div .blancas{
+        width: 25px;
+        height: 25px;
+        background-color: #fff6d5;
+        border-radius: 50%;
+        border: 2px solid black;
+    
+    }
+    .fila2 div .blancas{
+        width: 25px;
+        height: 25px;
+        background-color: #fff6d5;
+        border-radius: 50%;
+        border: 2px solid black;
+    }
+    footer{
+        margin-top: 80%;
+    }
+}
