@@ -1,0 +1,50 @@
+img:nth-child(1){
+    margin-left: 25%;
+}
+img:nth-child(2){
+    width: 100px;
+    position: relative;
+    bottom: 100px;
+    right: 800px;
+    animation: flotador 5s infinite;
+}
+img:nth-child(3){
+    width: 30px;
+    position: relative;
+    bottom: 600px;
+    right: 800px;
+    animation: gaviota 10s infinite;
+}
+.cometa{
+    position:relative;
+    top: 5px;
+    right: 500px;
+    animation: cometa 5s infinite;
+}
+
+.cometa > path{
+    fill: transparent;
+    stroke: black;
+    stroke-width: 3;
+}
+
+@keyframes flotador{
+    25%{
+        rotate:5deg;
+    }
+    75%{
+        rotate:-5deg;
+    }
+}
+
+@keyframes gaviota {
+    0% {right: 50%;}
+    100% {right: 8%;}
+}
+
+@keyframes cometa{
+    75%{
+        rotate:-5deg;
+        transform-origin: 0 0 0;
+    }
+}

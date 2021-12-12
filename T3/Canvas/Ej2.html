@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animaciones Web</title>
+    <script>
+        function cargaContextoCanvas(idCanvas) {
+            var contexto = false, elemento = document.getElementById(idCanvas);
+            if (elemento && elemento.getContext)
+                contexto = elemento.getContext('2d');
+
+            return contexto;
+        }
+
+        window.onload = function () {
+            var contexto = cargaContextoCanvas('canvas1');
+            if (contexto) {
+                //Accedo al contexto de '2d' de este canvas, necesario para dibujar
+                contexto.fillStyle = 'red';
+                contexto.beginPath();
+                contexto.moveTo(50, 5);
+                contexto.lineTo(75, 65);
+                contexto.lineTo(50, 125);
+                contexto.lineTo(25, 65);
+                contexto.fill();
+                contexto.closePath();
+                
+                contexto.fillStyle = 'red';
+                contexto.beginPath();
+                contexto.moveTo(350, 5);
+                contexto.lineTo(375, 65);
+                contexto.lineTo(350, 125);
+                contexto.lineTo(325, 65);
+                contexto.fill();
+                contexto.closePath();
+                
+                contexto.fillStyle = 'red';
+                contexto.beginPath();
+                contexto.moveTo(50, 5+650);
+                contexto.lineTo(75, 65+650);
+                contexto.lineTo(50, 125+650);
+                contexto.lineTo(25, 65+650);
+                contexto.fill();
+                contexto.closePath();
+                
+                contexto.fillStyle = 'red';
+                contexto.beginPath();
+                contexto.moveTo(350, 5+650);
+                contexto.lineTo(375, 65+650);
+                contexto.lineTo(350, 125+650);
+                contexto.lineTo(325, 65+650);
+                contexto.fill();
+                contexto.closePath();
+                
+            }
+
+        }
+    </script>
+
+    <style>
+        #canvas1{
+            border: black 2px solid;
+            border-radius: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="canvas1" height="800" width="400" >
+        Tu navegador no sirve
+    </canvas>
+</body>
+
+</html>
