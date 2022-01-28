@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pontano+Sans&display=swap" rel="stylesheet"> 
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="graficas/grafica1.js"></script>
+    <script src="graficas/grafica2.js"></script>
+    <script src="graficas/grafica3.js"></script>
+    <script src="graficas/grafica4.js"></script>
+    <script src="graficas/grafica5.js"></script>
+    <script src="graficas/grafica6.js"></script>
+    <script src="graficas/grafica7.js"></script>
+
+    <link rel="stylesheet" href="scss/style.css">
+    <title>Resumen de billetera</title>
+</head>
+<body>
+    <div class="grid_container">
+        <div class="MenuBar">
+            <img src="img/bybit.svg" class= "logo"alt="">
+            <div class="lista">
+                <div class="btn">Mercados</div>
+                <div class="btn">Spot</div>
+                <div class="btn">Derivados</div>
+            </div>
+
+            <div class="form">
+                <label for="">Usuario:</label><br>
+                <input type="text" name="usuario" id="usuario"><br>
+                <label for="">Password:</label><br>
+                <input type="password" name="password" id="password"><br>
+                <div class="btn1">Entrar</div>
+                
+            </div>
+        </div>
+        <div class="aside">
+            <ul class="btns">
+                <div class="btn2">Depositar</div>
+                <div class="btn2">Retirar</div>
+                <div class="linea"></div>
+            </ul>
+            <div class="btn1">
+                <img src="img/reporte.png" alt="">
+                <p>Resumen</p>
+                <div class="linea"></div>
+            </div>
+
+            <div class="btn1">
+                <img src="img/billetera.png" alt="">
+                <p>Billera spot</p>
+                <div class="linea"></div>
+            </div>
+
+            <div class="btn1">
+                <img src="img/tether.png" alt="">
+                <p>Perpetuos de USDT</p>
+                <div class="linea"></div>
+            </div>
+            <div class="btn1">
+                <img src="img/lazo-de-flecha.png" alt="">
+                <p>Perpetuos inversos</p>
+                <div class="linea"></div>
+            </div>
+            <div class="btn1">
+                <img src="img/futuro.png" alt="">
+                <p>Futuros inversos</p>
+            </div>
+        </div>
+        <div class="main">
+            <div class="billetera">
+                <h1>MI BILLETERA</h1>
+                <div id="grafica1" ></div>
+            </div>
+            <div class="pyg">
+                <h1>PyG DIARIO</h1>
+                <div id="grafica2" ></div>
+            </div>
+
+            <table>
+                <tr>
+                    <th>Moneda</th>
+                    <th class = "no-mobile">Saldo de billetera</th>
+                    <th class = "no-mobile">Saldo disponible</th>
+                    <th class = "no-mobile">Precio</th>
+                </tr>
+                <tr>
+                    <td><img src="img/btc.png" alt=""> BTC</td>
+                    <td class = "no-mobile">3.00005622</td>
+                    <td class = "no-mobile">2.95067829</td>
+                    <td class = "no-mobile">38,790,45$</td>
+                    <td><div id="grafica3"></div></td>
+                </tr>
+                <tr>
+                    <td><img src="img/eth.png" alt=""> ETH</td>
+                    <td class = "no-mobile">3.00005622</td>
+                    <td class = "no-mobile">2.95067829</td>
+                    <td class = "no-mobile">2190,55$</td>
+                    <td><div id="grafica4"></div></td>
+                </tr>
+                <tr>
+                    <td><img src="img/luna.png" alt=""> LUNA</td>
+                    <td class = "no-mobile">3.00005622</td>
+                    <td class = "no-mobile">2.95067829</td>
+                    <td class = "no-mobile">129,33$</td>
+                    <td><div id="grafica6"></div></td>
+                </tr>
+                <tr>
+                    <td><img src="img/dot.png" alt=""> DOT</td>
+                    <td class = "no-mobile">3.00005622</td>
+                    <td class = "no-mobile">2.95067829</td>
+                    <td class = "no-mobile">19,89$</td>
+                    <td><div id="grafica7"></div></td>
+                </tr>
+            </table>
+        </div>
+        <div class="footer">
+            <h3>Isidro Pérez Padilla 2DAW  </h3>
+        </div>
+    </div>
+</body>
+</html>

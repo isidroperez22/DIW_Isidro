@@ -1,0 +1,97 @@
+img{
+    height: 30px;
+    width: 30px;
+    margin-left: 2em;
+    margin-right: 1em;
+}
+
+.MenuBar{
+    .logo{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        padding-top: 30px;
+        width: 150px;
+        height: auto;
+    }
+    .lista{
+        display: inline-block;
+        grid-column-start: 2;
+        grid-column-end: 5;
+        
+    }
+    .btn {
+        margin-left: 5%;
+        margin-right: 10%;
+        text-align: center;
+        padding: 60px;
+        display: inline-block;
+        &:hover{
+            opacity: 0.9;
+            background-color: $amarillo;
+            cursor: pointer;
+        }
+    }
+    .form{
+        grid-column-start: 5;
+        grid-column-end: 6;
+    }
+}
+.aside{
+    .btn2 {
+        display: inline-block;
+        background-color: $amarillo;
+        padding: 10px;
+        border-radius: 10%;
+        margin: 5%;
+        &:hover{
+            opacity: 0.5;
+            cursor: pointer;
+        }
+    }
+    div{
+        p{
+            margin-left: 15%;
+        }
+    }
+    .linea {
+        border-top: 2px solid $amarillo;
+        margin: 20px auto 20px auto;
+    }
+    
+    .btn1:hover{
+        opacity: 0.5;
+        cursor: pointer;
+    }
+}
+
+.main{
+    .billetera{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        
+    }
+    .pyg{
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    table{
+        grid-column-start: 1;
+        grid-column-end:4;
+        grid-row-start: 3;
+        tr{
+            th{
+                text-align: left;
+            }
+        }
+    }
+}
+
+.footer{
+    h3{
+        text-align: center;
+    }
+}

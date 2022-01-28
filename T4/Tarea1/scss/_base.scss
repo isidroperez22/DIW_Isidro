@@ -1,0 +1,32 @@
+$azul : #2B2836;
+$blanco : #fff;
+$amarillo : #F8A404;
+$fuente: 'Pontano Sans', sans-serif;
+*{
+    font-family: $fuente;
+}
+
+@mixin colores($color, $letra) {
+    background-color: $color;
+    color: $letra;
+}
+.MenuBar{
+    @include colores(#2B2836, #fff);
+}
+.footer{
+    @include colores(#2B2836, #fff);
+}
+
+.footer{
+    background-color: #2B2836;
+    color: #fff;
+}
+
+.btn1:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.aside{
+    border: solid 2px $amarillo ;
+}
