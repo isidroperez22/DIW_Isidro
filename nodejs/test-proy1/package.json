@@ -1,0 +1,15 @@
+{
+  "name": "test-proy1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "minimizar-html": "html-minifier --input-dir html --output-dir dist  --file-ext html --remove-comments  --collapse-whitespace --minify-css true --minify-js true"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "html-minifier": "^4.0.0"
+  }
+}

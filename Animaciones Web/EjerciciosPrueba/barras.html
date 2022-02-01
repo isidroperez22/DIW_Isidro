@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            margin: 2%;
+        }
+        #c1{
+            background-color: red;
+            width: 50%;
+            text-align: center;
+        }
+        #c2{
+            background-color: yellow;
+            width: 50%;
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="c1">C1</div>
+    <div id="c2">C2</div>
+    <script>
+        var keyframes = [
+            { transform: 'translate(0%, 0 )' },
+            { transform: 'translate(100% ,0) ' }
+        ]
+        var params = {
+            duration: 3000,
+            iterations: Infinity,
+            direction: 'alternate'
+        }
+        var keyframes1 = [
+            { transform: 'translate(100%, 0 )' },
+            { transform: 'translate(0% ,0)'}
+        ]
+        var params1 = {
+            duration: 3000,
+            iterations: Infinity,
+            direction: 'alternate'
+        }
+        var animación = document.getElementById('c1').animate(keyframes, params);
+        var animación2 = document.getElementById('c2').animate(keyframes1, params1);
+    </script>
+</body>
+</html>
