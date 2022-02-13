@@ -1,0 +1,57 @@
+////
+/// Ejercicio gallery
+/// @author Isidro Pérez Padilla 2ºDAW
+/// @since 1.0
+
+
+/// Columnas maximas
+/// @type Maxcolunms
+$MAX_COLUMNS: 4 !default;
+/// Asocia los pixeles del ancho de pantalla junto al numero de columans
+/// @type Map
+$RESPONSIVE_COLUMNS: (1024px: 3, 768px: 2, 480px: 1);
+
+/// Calcula el ancho total según el ancho de columnas del grid
+/// @param {Number} $n - Numero de columnas
+/// @return {100% / n} - Divide el 100% del ancho por las columnas que hay 
+@function grid_columns($n) {
+    @if ($n > 0) {
+        @return 100% / $n;
+    }
+    @else {
+        @return 0%
+    }
+}
+
+///
+/// Redimensiona segun el ancho de la pantalla
+/// @param {Number} $n - Columnas del grid
+///
+
+@mixin resize($n) {
+    .gallery img {
+        width: grid_columns($n);
+    }
+}
+
+body {
+    margin: 0 auto;
+    max-width: 1024px; 
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch; 
+} 
+
+@include resize($MAX_COLUMNS);
+
+
+/* Adaptación a smartphone que redemensina el tamanño de las columnas */
+@each $size, $value in $RESPONSIVE_COLUMNS {
+    @media (max-width:$size){
+        @include resize($value);
+    }
+}
